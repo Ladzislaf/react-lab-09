@@ -10,44 +10,42 @@ import cucumberImageSrc from '../../Images/cucumber.jpg'
 import tomatoImageSrc from '../../Images/tomato.jpg'
 import carrotImageSrc from '../../Images/carrot.jpg'
 
-// todo мб хранить весь список в App.js и передавать его двум дочерним,
-//  которые по своему его обрабатывают
 const SortTable = ({setProductsList}) => {
     const [rows, setRows] = useState([
         {
             id: 1,
             name: "apple",
-            price: 5,
+            price: 4.30,
             count: 2,
             image: appleImageSrc,
             description: 'Apples are a popular fruit, containing antioxidants, vitamins, dietary fiber, and a range of other nutrients.',
             new: true,
-            discount: 0
+            discount: 5
         },
         {
             id: 2,
             name: "orange",
-            price: 19,
+            price: 6.80,
             count: 25,
             image: orangeImageSrc,
             description: 'Oranges are truly an outstanding fruit. They are very healthy, cheap, and tasty, making them the ideal snack.',
-            new: false,
+            new: true,
             discount: 10
         },
         {
             id: 3,
             name: "banana",
-            price: 25,
+            price: 8,
             count: 30,
             image: bananaImageSrc,
             description: 'Bananas are among the most important food crops on the planet.',
-            new: true,
+            new: false,
             discount: 0
         },
         {
             id: 4,
             name: "pineapple",
-            price: 40,
+            price: 12,
             count: 7,
             image: pineappleImageSrc,
             description: 'The pineapple is a tropical plant with an edible fruit. The pineapple is indigenous to South America, where it has been cultivated for many centuries.',
@@ -57,17 +55,17 @@ const SortTable = ({setProductsList}) => {
         {
             id: 5,
             name: "cucumber",
-            price: 14,
+            price: 3.50,
             count: 1,
             image: cucumberImageSrc,
             description: 'Cucumber is a widely-cultivated creeping vine plant in the Cucurbitaceae family that bears usually cylindrical fruits, which are used as vegetables.',
             new: false,
-            discount: 0
+            discount: 5
         },
         {
             id: 6,
             name: "tomato",
-            price: 25,
+            price: 4.20,
             count: 0,
             image: tomatoImageSrc,
             description: 'The tomato is the edible berry of the plant Solanum lycopersicum, commonly known as the tomato plant.',
@@ -77,12 +75,12 @@ const SortTable = ({setProductsList}) => {
         {
             id: 7,
             name: "carrot",
-            price: 7,
+            price: 3,
             count: 45,
             image: carrotImageSrc,
             description: 'The carrot is a root vegetable often claimed to be the perfect health food. It is crunchy, tasty, and highly nutritious.',
             new: false,
-            discount: 11
+            discount: 50
         },
     ]);
     // asc - по возрастанию, desc - по убыванию
