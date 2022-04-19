@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-lab-09/static/css/main.ddd255fd.css",
-    "main.js": "/react-lab-09/static/js/main.27b5b375.js",
+    "main.css": "/react-lab-09/static/css/main.6b1c6f38.css",
+    "main.js": "/react-lab-09/static/js/main.84785f42.js",
     "static/media/pineapple.jpg": "/react-lab-09/static/media/pineapple.d5f52d846c47ea250dc8.jpg",
-    "static/media/tomato.jpg": "/react-lab-09/static/media/tomato.f6cdedb2b211ba6491c5.jpg",
     "static/media/banana.jpg": "/react-lab-09/static/media/banana.8ed9723c7d21e7ae0201.jpg",
     "static/media/apple.jpg": "/react-lab-09/static/media/apple.33d8e6882c285da2d1d4.jpg",
     "static/media/orange.jpg": "/react-lab-09/static/media/orange.b83c0907f38b5dbfb884.jpg",
+    "static/media/tomato.jpg": "/react-lab-09/static/media/tomato.5d24145a7b1f8132e516.jpg",
     "static/media/cucumber.jpg": "/react-lab-09/static/media/cucumber.7efdc8382b70d9382e2a.jpg",
     "index.html": "/react-lab-09/index.html",
-    "main.ddd255fd.css.map": "/react-lab-09/static/css/main.ddd255fd.css.map",
-    "main.27b5b375.js.map": "/react-lab-09/static/js/main.27b5b375.js.map"
+    "main.6b1c6f38.css.map": "/react-lab-09/static/css/main.6b1c6f38.css.map",
+    "main.84785f42.js.map": "/react-lab-09/static/js/main.84785f42.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddd255fd.css",
-    "static/js/main.27b5b375.js"
+    "static/css/main.6b1c6f38.css",
+    "static/js/main.84785f42.js"
   ]
 }
