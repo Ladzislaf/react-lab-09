@@ -118,19 +118,7 @@ const SortTable = ({setProductsList}) => {
         if(sort === 'asc') setSort('desc')
         else setSort('asc')
 
-        // set new products first
-        let newProductsList = [], indexToSlice = []
-        for (let i = 0; i < copy.length; i++) {
-            if (copy[i].new) {
-                newProductsList.push(copy[i])
-                indexToSlice.push(i)
-            }
-        }
-
-        // remove new products
-        indexToSlice.map((el, i) => copy.splice(el - i, 1))
-
-        setRows([...newProductsList, ...copy])
+        setRows(copy)
     }
 
     return (
