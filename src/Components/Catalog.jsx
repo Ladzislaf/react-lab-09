@@ -34,13 +34,16 @@ const Catalog = ({productsList, setProductsList}) => {
         else setSort('asc')
 
         // set new products first
-        let newProductsList = []
+        let newProductsList = [], indexToSlice = []
         for (let i = 0; i < copy.length; i++) {
             if (copy[i].new) {
                 newProductsList.push(copy[i])
-                copy.splice(i, 1)
+                indexToSlice.push(i)
             }
         }
+
+        // remove new products
+        indexToSlice.map((el, i) => copy.splice(el - i, 1))
 
         setProductsList([...newProductsList, ...copy])
     }

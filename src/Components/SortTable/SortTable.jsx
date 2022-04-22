@@ -35,7 +35,7 @@ const SortTable = ({setProductsList}) => {
         {
             id: 3,
             name: "banana",
-            price: 8,
+            price: 8.00,
             count: 30,
             image: bananaImageSrc,
             description: 'Bananas are among the most important food crops on the planet.',
@@ -45,7 +45,7 @@ const SortTable = ({setProductsList}) => {
         {
             id: 4,
             name: "pineapple",
-            price: 12,
+            price: 12.00,
             count: 7,
             image: pineappleImageSrc,
             description: 'The pineapple is a tropical plant with an edible fruit. The pineapple is indigenous to South America, where it has been cultivated for many centuries.',
@@ -75,7 +75,7 @@ const SortTable = ({setProductsList}) => {
         {
             id: 7,
             name: "carrot",
-            price: 3,
+            price: 3.00,
             count: 45,
             image: carrotImageSrc,
             description: 'The carrot is a root vegetable often claimed to be the perfect health food. It is crunchy, tasty, and highly nutritious.',
@@ -118,7 +118,19 @@ const SortTable = ({setProductsList}) => {
         if(sort === 'asc') setSort('desc')
         else setSort('asc')
 
-        setRows(copy)
+        // set new products first
+        let newProductsList = [], indexToSlice = []
+        for (let i = 0; i < copy.length; i++) {
+            if (copy[i].new) {
+                newProductsList.push(copy[i])
+                indexToSlice.push(i)
+            }
+        }
+
+        // remove new products
+        indexToSlice.map((el, i) => copy.splice(el - i, 1))
+
+        setRows([...newProductsList, ...copy])
     }
 
     return (
